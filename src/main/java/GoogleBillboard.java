@@ -8,9 +8,9 @@ public class GoogleBillboard {
 	public void setup()
 	{
     		for(int i=0; i<e.length()-10; i++){
-      		if(isPrime(Double.parseDouble(e.substring(i, i+10)))){
-        		System.out.println(e.substring(i, i+10));
-        		break;
+      			if(isPrime(Double.parseDouble(e.substring(i, i+10)))){
+        			System.out.println(e.substring(i, i+10));
+        			break;
       			}
     		}
 	}
