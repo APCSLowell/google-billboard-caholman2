@@ -5,15 +5,16 @@ public class GoogleBillboard {
 	public static void main(final String[] args) {
 		//System.out.println("Not the right string, tests will fail!");
 		for(int i=0; i<e.length()-10; i++){
-      			if(isPrime(Double.parseDouble(e.substring(i, i+10)))){
-        			System.out.println(e.substring(i, i+10));
+      			double check = Double.parseDouble(e.substring(i, i+10));
+      			if(isPrime(check)){
+        			System.out.println(check);
         			break;
       			}
     		}
 	}
 
 	//Finish this function
-	public boolean isPrime(double dNum){
+	public static boolean isPrime(double dNum){
           if(dNum<3)
             return false;
           for(int i=2; i<=Math.sqrt(dNum); i++)
