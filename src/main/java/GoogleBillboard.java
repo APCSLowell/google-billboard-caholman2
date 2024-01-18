@@ -5,7 +5,15 @@ public class GoogleBillboard {
 	public static void main(final String[] args) {
 		System.out.println("Not the right string, tests will fail!");
 	}
-	
+	public void setup()
+	{
+    		for(int i=0; i<e.length()-10; i++){
+      		if(isPrime(Double.parseDouble(e.substring(i, i+10)))){
+        		System.out.println(e.substring(i, i+10));
+        		break;
+      			}
+    		}
+	}
 
 	//Finish this function
 	public boolean isPrime(double dNum){
